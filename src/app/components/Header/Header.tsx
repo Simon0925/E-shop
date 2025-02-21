@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <header className="w-dvw h-screen bg-no-repeat bg-fixed bg-cover bg-center "
             style={{ backgroundImage: "url('Header/baner.jpg')" }}>
-                <section className='flex flex-row justify-between p-10 bg-white'>
+                <section className='flex flex-row justify-between p-10 '>
                     <Logo />
                     <Navigation />
                 </section>
