@@ -15,7 +15,7 @@ const Navigation = () => {
           <li key={index} className="group">
             <Link
               href={item.href}
-              className={`transition-colors duration-300 group-hover:text-red-600 ${rowdies.className}`}
+              className={`transition-colors duration-300 text-black  group-hover:text-red-600 ${rowdies.className}`}
             >
               {item.label}
             </Link>
