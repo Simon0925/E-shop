@@ -4,10 +4,12 @@ import Navigation from '../Navigation/Navigation';
 
 const Header = () => {
     return(
-        <header className="w-dvw h-screen bg-no-repeat bg-fixed bg-cover bg-center flex flex-row p-10 justify-between"
+        <header className="w-dvw h-screen bg-no-repeat bg-fixed bg-cover bg-center "
             style={{ backgroundImage: "url('Header/baner.jpg')" }}>
-             <Logo />
-            <Navigation />
+                <section className='flex flex-row justify-between p-10 bg-white'>
+                    <Logo />
+                    <Navigation />
+                </section>
         </header>
     )
 }

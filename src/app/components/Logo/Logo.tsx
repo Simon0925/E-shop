@@ -9,8 +9,8 @@ const BlackOpsOne = Black_Ops_One({
 
 const Logo = () => {
     return(
-       <section className='text-3xl'>
-            <h1 className={`${BlackOpsOne.className}`}>
+       <section >
+            <h1 className={`text-3xl text-black ${BlackOpsOne.className}`}>
                 E-Movement
             </h1>
        </section>
