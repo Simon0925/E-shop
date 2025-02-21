@@ -1,4 +1,5 @@
 
+
 import { Black_Ops_One} from 'next/font/google';
 
 const BlackOpsOne = Black_Ops_One({
@@ -8,7 +9,7 @@ const BlackOpsOne = Black_Ops_One({
 
 const Logo = () => {
     return(
-       <section className='text-3xl  '>
+       <section className='text-3xl'>
             <h1 className={`${BlackOpsOne.className}`}>
                 E-Movement
             </h1>
