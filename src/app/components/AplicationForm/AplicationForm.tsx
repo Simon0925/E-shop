@@ -11,7 +11,7 @@ const rowdies = Rowdies({
 });
 
 const ApplicationForm = () => {
-  const [state, formAction, isPending] = useActionState(sendForm, initialFormData);
+  const [state, formAction] = useActionState(sendForm, initialFormData);
 
   return (
     <form action={formAction} className="w-[500px] h-80 bg-white rounded-xl p-4 flex flex-col justify-between">
