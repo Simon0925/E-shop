@@ -18,7 +18,7 @@ export default function SideMenu({ open }: SideMenuProps) {
 
   return (
     <section
-      className={`w-80 fixed top-24 left-0 h-screen bg-white transition-transform duration-300 
+      className={`w-80 fixed  top-24 left-0 h-screen bg-gray-800 transition-transform duration-300 
         ${open ? "translate-x-0" : "-translate-x-full"}
         
       `}
@@ -26,10 +26,10 @@ export default function SideMenu({ open }: SideMenuProps) {
     <nav className="">
       <ul className="flex flex-col ">
         {navLinks.map((item, index) => (
-          <li key={index} className="border-b text-lg border-black pl-4 h-12 flex items-center">
+          <li key={index} className="border-b text-lg border-white pl-4 h-12 flex items-center">
             <Link
               href={item.href}
-              className={` text-black text-xl ${rowdies.className}`}
+              className={` text-white text-xl ${rowdies.className}`}
             >
               {item.label}
             </Link>
