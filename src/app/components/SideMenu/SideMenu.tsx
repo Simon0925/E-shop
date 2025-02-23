@@ -1,6 +1,5 @@
 "use client";
 
-import { Angkor } from "next/font/google";
 import { navLinks } from "../../constants/navLinks";
 import { Rowdies } from "next/font/google";
 import Link from "next/link";
