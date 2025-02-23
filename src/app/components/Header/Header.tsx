@@ -1,15 +1,20 @@
+import { ReactNode } from 'react';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 
+interface HeaderProps {
+    burgerMenu: ReactNode;
+}
 
-const Header = () => {
+const Header = ({burgerMenu}:HeaderProps) => {
     return(
-        <header className="w-dvw h-screen bg-no-repeat bg-fixed bg-cover bg-center "
-            style={{ backgroundImage: "url('Header/baner.jpg')" }}>
-                <section className='flex flex-row justify-between p-10 '>
-                    <Logo />
-                    <Navigation />
-                </section>
+        <header className='flex flex-row bg-white drop-shadow-2xl  fixed justify-between h-24 w-full items-center px-10'>
+                
+            <Logo />
+            <Navigation />
+            <section className="block lg:hidden " >
+                {burgerMenu}
+            </section>
         </header>
     )
 }

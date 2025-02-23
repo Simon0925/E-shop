@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
+import BurgerMenu from "./UI/BurgerMenu/BurgerMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,9 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased
+        w-dvw h-screen bg-no-repeat bg-fixed bg-cover bg-center
+        
+        `}
+            style={{ backgroundImage: "url('Header/baner.jpg')" }}
       >
-        <Header />
+        <Header burgerMenu={<BurgerMenu />}/>
         {children}
       </body>
     </html>
