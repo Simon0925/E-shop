@@ -4,6 +4,7 @@ import { Rowdies } from "next/font/google";
 import { useActionState } from "react";
 import { initialFormData } from "./initialFormData";
 import sendForm from "./services/sendForrm";
+import style from './ApplicationForm.module.scss'
 
 const rowdies = Rowdies({
   subsets: ["latin"],
@@ -14,8 +15,8 @@ const ApplicationForm = () => {
   const [state, formAction] = useActionState(sendForm, initialFormData);
 
   return (
-    <form action={formAction} className="w-[500px] h-80 bg-white rounded-xl p-4 flex flex-col justify-between">
-      <h3 className={`text-xl text-center ${rowdies.className}`}>
+    <form action={formAction} className="w-[350px] h-80 bg-black rounded-xl p-4 flex flex-col justify-between sm:w-[500px]">
+      <h3 className={`text-xl text-white text-center ${rowdies.className}`}>
         Оставьте заявку, и наши специалисты подберут для вас наилучший вариант.
       </h3>
       <input
@@ -37,7 +38,7 @@ const ApplicationForm = () => {
         className="bg-white w-full text-black placeholder:text-gray-500 border-black border-2 rounded-xl p-3 outline-none"
         required
         />
-      <button type="submit" className="bg-black text-white rounded-xl p-3 hover:bg-red-600 transition">
+      <button type="submit" className={`bg-white text-black rounded-xl p-3 hover:bg-blue-500 hover:text-white transition`}>
         Отправить
       </button>
     </form>

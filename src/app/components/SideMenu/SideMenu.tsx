@@ -18,7 +18,7 @@ export default function SideMenu({ open }: SideMenuProps) {
 
   return (
     <section
-      className={`w-80 fixed  top-24 left-0 h-screen bg-gray-800 transition-transform duration-300 
+      className={`w-80 fixed  top-24 left-0 h-screen bg-black transition-transform duration-300 
         ${open ? "translate-x-0" : "-translate-x-full"}
         
       `}
