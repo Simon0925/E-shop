@@ -4,7 +4,7 @@ import { Rowdies } from "next/font/google";
 import { useActionState } from "react";
 import { initialFormData } from "./initialFormData";
 import sendForm from "./services/sendForrm";
-import style from './ApplicationForm.module.scss'
+
 
 const rowdies = Rowdies({
   subsets: ["latin"],
