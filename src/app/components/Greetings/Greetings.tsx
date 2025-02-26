@@ -1,6 +1,5 @@
 import Button from '@/app/UI/Button/Button';
 import h from './h.jpg'
-import noImageAvailable from '../../../../public/no-image-available.jpg'
 import Image from "next/image";
 
 const Greetings = () => {
