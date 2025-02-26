@@ -1,5 +1,6 @@
 import AplicationForm from "./components/AplicationForm/AplicationForm";
 import Greetings from "./components/Greetings/Greetings";
+import OurService from "./components/OurService/OurService";
 
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
       </section>
       <section className="w-full mt-24 " >
         <Greetings />
+      </section>
+      <section className="w-full" >
+        <OurService />
       </section>
     </main>
   );

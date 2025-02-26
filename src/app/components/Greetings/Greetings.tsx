@@ -32,7 +32,7 @@ const Greetings = () => {
                 height={800} 
                 className="rounded-lg object-cover"
                 priority
-                sizes="(max-width: 768px) 100vw, 50vw" 
+                sizes="(max-width: 768px) 100vw, 50vw"
             />
             </div>
         </div>

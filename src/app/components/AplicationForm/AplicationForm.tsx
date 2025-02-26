@@ -38,7 +38,7 @@ const ApplicationForm = () => {
         className="bg-white w-full text-black placeholder:text-gray-500 border-black border-2 rounded-xl p-3 outline-none"
         required
         />
-      <button type="submit" className={`bg-white text-black rounded-xl p-3 hover:bg-blue-500 hover:text-white transition`}>
+      <button type="submit" className={`bg-white text-black rounded-xl p-3 hover:bg-red-700 hover:text-white transition`}>
         Отправить
       </button>
     </form>
