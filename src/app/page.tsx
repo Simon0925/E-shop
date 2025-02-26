@@ -1,4 +1,5 @@
 import AplicationForm from "./components/AplicationForm/AplicationForm";
+import Greetings from "./components/Greetings/Greetings";
 
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
         <h1 className="text-4xl sm:text-6xl text-red-600 uppercase">
           приключениям
         </h1>
+      </section>
+      <section className="w-full mt-24 " >
+        <Greetings />
       </section>
     </main>
   );

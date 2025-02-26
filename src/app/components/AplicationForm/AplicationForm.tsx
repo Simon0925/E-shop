@@ -15,7 +15,7 @@ const ApplicationForm = () => {
   const [state, formAction] = useActionState(sendForm, initialFormData);
 
   return (
-    <form action={formAction} className="w-[350px] h-80 bg-black rounded-xl p-4 flex flex-col justify-between sm:w-[500px]">
+    <form action={formAction} className="w-[350px] h-80 bg-black/75  rounded-xl p-4 flex flex-col justify-between sm:w-[500px]">
       <h3 className={`text-xl text-white text-center ${rowdies.className}`}>
         Оставьте заявку, и наши специалисты подберут для вас наилучший вариант.
       </h3>
