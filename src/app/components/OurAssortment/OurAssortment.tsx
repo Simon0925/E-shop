@@ -7,18 +7,19 @@ import {ProductTypes} from '../../types/product'
 const OurAssortment = () => {
 
     const [data, setData] = useState<ProductTypes[]>([]);
-    const [loading, setLoading] = useState(true); 
-    const [error, setError] = useState<string | null>(null);
+    // const [loading, setLoading] = useState(true); 
+    // const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
                 const products = await getProducts();
                 setData(products);
-                setLoading(false);
+                // setLoading(false);
             } catch (err) {
-                setError('Failed to load products');
-                setLoading(false);
+                // setError('Failed to load products');
+                // setLoading(false);
+                console.log(err)
             }
         };
 
