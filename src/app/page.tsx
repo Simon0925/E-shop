@@ -1,4 +1,5 @@
 import AplicationForm from "./components/AplicationForm/AplicationForm";
+import Footer from "./components/Footer/Footer";
 import Greetings from "./components/Greetings/Greetings";
 import OurAssortment from "./components/OurAssortment/OurAssortment";
 import OurService from "./components/OurService/OurService";
@@ -27,6 +28,7 @@ export default function Home() {
       <section className="w-ful" >
         <OurAssortment />
       </section>
+      <Footer/>
     </main>
   );
 }

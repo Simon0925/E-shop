@@ -1,6 +1,6 @@
 import data from './product.json'
 
-export async function GET(request: Request) {
+export async function GET() {
     return new Response(JSON.stringify(data), {
         status: 200,
         headers: {
@@ -8,3 +8,4 @@ export async function GET(request: Request) {
         },
     });
 }
+
